@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&family=Raleway:wght@600&family=Caramel&display=swap');
+
+.playfair-display-regular {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.raleway-regular {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+  .caramel-regular {
+    font-family: "Caramel", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+   
+header {
+    
+    color: black;
+    padding: 1rem;
+    text-align: center;
+}
+    body {
+        background-color: #fdfdffa8;
+        font-family: "Raleway", sans-serif;
+        margin: 0;
+        padding: 20px;
+        color: #333;
+    }
+
+
+    h1 {
+        color: #051464f6;
+        text-align: center;
+        font-family: "Playfair Display", serif;
+    }
+h2
+{
+    color: #051464f6;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+}
+h3
+{
+    color: #051464f6;
+    text-align: center;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* wider main, narrower sidebar */
+    gap: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+nav {
+    background-color: #2143da9c; /* keeps the nav distinct */
+    padding: 10px 0;
+    font-family: "Playfair Display", serif;
+}
+
+nav ul.nav-flex {
+    display: flex;
+    justify-content: space-around; /* or space-around / space-between */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul.nav-flex li a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+nav ul.nav-flex li a:hover {
+    background-color: #a7e9f1;
+    text-decoration:underline
+}
+.about-content, .location-content {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end
+}
+
+.profile-photo, .flag-photo {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+.about-content {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+section {
+    text-align: left;
+    font-family: "Raleway", sans-serif;
+}
+.card {
+    background: rgb(189, 195, 223);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    font-family: "Raleway", sans-serif;
+}
+
+footer {
+    background: #2143da9c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
