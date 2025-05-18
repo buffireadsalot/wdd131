@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Responsive Temple Album Page" />
+  <meta name="author" content="Annela Buffin" />
+  <title>Temple Album</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/temples.css" />
+  <link rel="stylesheet" href="styles/temples-large.css" />
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+ <header>
+  <h1>Temple Album</h1>
+  <button id="menuBtn" aria-label="Toggle Navigation">☰</button>
+  <nav id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="#">Old</a>
+    <a href="#">New</a>
+    <a href="#">Large</a>
+    <a href="#">Small</a>
+  </nav>
+</header>
+
+  <main>
+    <h1>My Favorite Temples</h1>
+    <div class="grid-container">
+      <figure><img src="images/lax.jpg" alt="Los Angeles California Temple"><figcaption>Los Angeles Temple</figcaption></figure>
+      <figure><img src="images/provo.jpg" alt="Provo Utah Temple"><figcaption>Provo Temple</figcaption></figure>
+      <figure><img src="images/slc.jpg" alt="Salt Lake City Utah Temple"><figcaption>Salt Lake City Temple</figcaption></figure>
+      <figure><img src="images/jordan.jpg" alt="Jordan River Utah Temple"><figcaption>Jordan Temple</figcaption></figure>
+      <figure><img src="images/las.jpg" alt="Las Vegas Nevada Temple"><figcaption>Las Vegas Temple</figcaption></figure>
+      <figure><img src="images/sna.jpg" alt="Newport Beach California Temple"><figcaption>Newport Beach Temple</figcaption></figure>
+      <figure><img src="images/rdu.jpeg" alt="Raleigh North Carolina Temple"><figcaption>Raleigh Temple</figcaption></figure>
+      <figure><img src="images/atl.jpg" alt="Atlanta Georgia Temple"><figcaption>Atlanta Temple</figcaption></figure>
+      <figure><img src="images/wdc.jpeg" alt="Washington D.C."><figcaption>Washington D.C. Temple</figcaption></figure>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Annela Buffin | Last Updated: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

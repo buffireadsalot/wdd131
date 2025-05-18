@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS + CSS-in-JS Cheat Sheet</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: auto;
+      padding: 1rem;
+      background-color: #f9f9f9;
+    }
+    h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.3rem;
+    }
+    pre {
+      background: #272822;
+      color: #f8f8f2;
+      padding: 1rem;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+    code {
+      font-family: Consolas, monospace;
+    }
+  </style>
+</head>
+<body>
+  <h1>JavaScript + CSS-in-JS Cheat Sheet</h1>
+
+  <h2>CSS in JavaScript</h2>
+  <pre><code>// Example: camelCase CSS properties
+el.style.backgroundColor = "#eee";
+el.style.fontWeight = "bold";
+el.style.marginTop = "1rem";
+el.style.borderRadius = "5px";
+  </code></pre>
+
+  <h2>DOM Selection</h2>
+  <pre><code>document.querySelector("div");
+document.querySelector("#myId");
+document.querySelectorAll(".myClass");
+document.getElementById("myId");
+  </code></pre>
+
+  <h2>Event Listener</h2>
+  <pre><code>button.addEventListener("click", () => {
+  alert("Button clicked!");
+});
+  </code></pre>
+
+  <h2>Class Toggle</h2>
+  <pre><code>el.classList.toggle("open");
+el.classList.add("active");
+el.classList.remove("hidden");
+  </code></pre>
+
+  <h2>Text & HTML</h2>
+  <pre><code>el.textContent = "Plain text";
+el.innerHTML = "<strong>Bold HTML</strong>";
+  </code></pre>
+
+  <h2>Create & Append Element</h2>
+  <pre><code>const newItem = document.createElement("li");
+newItem.textContent = "New item";
+document.querySelector("ul").appendChild(newItem);
+  </code></pre>
+
+  <h2>Conditionals</h2>
+  <pre><code>if (score >= 90) {
+  console.log("A");
+} else {
+  console.log("Keep trying!");
+}
+  </code></pre>
+
+  <h2>Template Literals</h2>
+  <pre><code>const name = "Annela";
+console.log(`Welcome, ${name}!`);
+  </code></pre>
+
+  <h2>Set Attributes</h2>
+  <pre><code>img.setAttribute("src", "image.jpg");
+link.setAttribute("target", "_blank");
+  </code></pre>
+
+  <h2>Debugging</h2>
+  <pre><code>console.log(value);
+console.dir(el);
+console.error("Something went wrong");
+  </code></pre>
+
+</body>
+</html>
