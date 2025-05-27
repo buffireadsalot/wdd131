@@ -19,12 +19,13 @@
 
   <main>
     <!-- Responsive Hero Image -->
-    <picture class="hero-image">
+    <picture class="hero-background">
       <source srcset="images/Tallinn_Wall.webp" media="(min-width: 768px)">
       <img src="images/flag-of-estonia.webp" alt="Tallinn City View" loading="lazy">
     </picture>
 
     <!-- Data Section -->
+     <div class="info-grid"> 
     <section class="card data">
       <h2>Data</h2>
       <p><strong>Area:</strong> 45,227 sq km</p>
@@ -46,11 +47,12 @@
       <p><strong>Wind:</strong> 12 km/h</p>
       <p><strong>Wind Chill:</strong> <span id="windChill">N/A</span></p>
     </section>
+    </div>
   </main>
 
   <footer>
     <p>&copy; <span id="year"></span> Annela Buffin - Estonia</p>
-    <p>Last Modification: <span id="lastModified"></span></p>
+    <p>Last Modifide: <span id="lastModified"></span></p>
   </footer>
 </body>
 </html>
