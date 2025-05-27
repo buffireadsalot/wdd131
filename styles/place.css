@@ -1,4 +1,10 @@
 /* place.css */
+:root {
+  --primary-blue: #0072ce;
+  --dark-black: #000000;
+  --text-color: #333333;
+  --card-bg: rgba(255, 255, 255, 0.9);
+}
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -6,13 +12,14 @@ body {
   padding: 0;
   color: #333;
   background-color: #ffffff;
+  color: var(--text-color);
 }
 
 header {
-  background-color: #0072ce; /* Estonian blue */
-  color: white;
-  text-align: center;
-  padding: 1rem;
+ background-color: var(--primary-blue);
+ color: rgba(255, 255, 255, 0.658);
+ text-align: center;
+ padding: 1rem;
 }
 
 h1, h2 {
@@ -53,7 +60,7 @@ main {
 
 
 .card {
-  background: rgba(255, 255, 255, 0.9);
+    background: var(--card-bg);
   border-radius: 8px;
   padding: 1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
@@ -67,7 +74,7 @@ main {
 }
 
 footer {
-  background-color: #000; /* Estonian black */
+   background-color: var(--dark-black);
   color: white;
   text-align: center;
   padding: 1rem;
