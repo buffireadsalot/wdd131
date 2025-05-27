@@ -1,0 +1,101 @@
+/* place.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&family=Raleway:wght@600&family=Caramel&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #ffffffa6;
+}
+
+header {
+  background-color: #0072ce; /* Estonian blue */
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  padding: 1rem;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+main {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  background: #f3f3f3b4;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.weather-heading::after {
+  content: " \26C5"; /* Unicode for ⛅ */
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+footer {
+  background-color: #000; /* Estonian black */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.weather-img {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Typography classes */
+.playfair-display-regular {
+  font-family: "Playfair Display", serif;
+}
+
+.raleway-regular {
+  font-family: "Raleway", sans-serif;
+}
+
+.caramel-regular {
+  font-family: "Caramel", cursive;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  picture {
+    grid-column: 1 / -1;
+  }
+
+  footer {
+    grid-column: 1 / -1;
+  }
+
+  .weather-img {
+    display: none; /* hide svg in desktop */
+  }
+
+  .weather-heading::after {
+    content: " \26C5";
+  }
+}
