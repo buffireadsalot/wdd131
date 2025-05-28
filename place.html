@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-  <meta name="description" content="Country profile for Estonia" >
-  <meta name="author" content="Annela Buffin" >
-  <title>Estonia</title>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+meta property="og:title" content="Discover Estonia – Country Facts & Culture" />
+<meta property="og:description" content="Learn about Estonia's population, weather, and visuals of Tallinn." />
+<meta property="og:image" content="https://buffireadsalot.github.io/wdd131/images/Tallinn_Old.webp" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://buffireadsalot.github.io/wdd131/place.html" />
+  <meta name="author" content="Annela Buffin" />
+  <title>Discover Estonia – Country Facts and Weather</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@600&family=Caramel&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caramel&family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/place.css" />
   <script src="scripts/place.js" defer></script>
 </head>
@@ -18,41 +22,44 @@
   </header>
 
   <main>
-    <!-- Responsive Hero Image -->
-    <picture class="hero-background">
-      <source srcset="images/Tallinn_Wall.webp" media="(min-width: 768px)">
-      <img src="images/flag-of-estonia.webp" alt="Tallinn City View" loading="lazy">
-    </picture>
+    <!-- Hero Image -->
+    <div class="hero-background">
+      <picture>
+        <source srcset="images/Tallinn_Old.webp" type="image/webp" media="(min-width: 768px)" />
+        <img src="images/flag-of-estonia.webp" alt="Estonian Flag waving with a Old Town City Center" loading="lazy" />
+      </picture>
+    </div>
 
-    <!-- Data Section -->
-     <div class="info-grid"> 
-    <section class="card data">
-      <h2>Data</h2>
-      <p><strong>Area:</strong> 45,227 sq km</p>
-      <p><strong>Population:</strong> 1,331,796</p>
-      <p><strong>Capital:</strong> Tallinn</p>
-      <p><strong>Languages:</strong> Estonian</p>
-      <p><strong>Currency:</strong> Euro €</p>
-      <p><strong>Time Zone:</strong> UTC+2</p>
-      <p><strong>Calling Code:</strong> +372</p>
-      <p><strong>Internet TLD:</strong> .ee</p>
-    </section>
+    <!-- Grid Over Image -->
+    <div class="info-grid">
+      <!-- Data Section -->
+      <section class="card data" aria-label="Estonia country facts">
+        <h2>Data</h2>
+        <p><strong>Area:</strong> 45,227 sq km</p>
+        <p><strong>Population:</strong> 1,331,796</p>
+        <p><strong>Capital:</strong> Tallinn</p>
+        <p><strong>Languages:</strong> Estonian</p>
+        <p><strong>Currency:</strong> Euro (€)</p>
+        <p><strong>Time Zone:</strong> UTC+2</p>
+        <p><strong>Calling Code:</strong> +372</p>
+        <p><strong>Internet TLD:</strong> .ee</p>
+      </section>
 
-    <!-- Weather Section -->
-    <section class="card weather">
-      <h2 class="weather-heading">Weather</h2>
-      <img src="images/weather.svg" alt="Weather icon" class="weather-img">
-      <p><strong>Temperature:</strong> 3 °C</p>
-      <p><strong>Conditions:</strong> Cloudy</p>
-      <p><strong>Wind:</strong> 12 km/h</p>
-      <p><strong>Wind Chill:</strong> <span id="windChill">N/A</span></p>
-    </section>
+      <!-- Weather Section -->
+      <section class="card weather" aria-label="Estonia current weather">
+        <h2 class="weather-heading">Weather</h2>
+        <img src="images/weather.svg" alt="Partly cloudy weather icon" class="weather-img" />
+        <p><strong>Temperature:</strong> 3 °C</p>
+        <p><strong>Conditions:</strong> Cloudy</p>
+        <p><strong>Wind:</strong> 12 km/h</p>
+        <p><strong>Wind Chill:</strong> <span id="windChill">N/A</span></p>
+      </section>
     </div>
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> Annela Buffin - Estonia</p>
-    <p>Last Modifide: <span id="lastModified"></span></p>
+    <p>&copy; <span id="year"></span> Annela Buffin – Estonia</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
   </footer>
 </body>
 </html>
