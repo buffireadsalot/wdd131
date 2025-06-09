@@ -1,21 +1,51 @@
 // main.js for Buffin Ancestry Final Project
 
-// === DOM Interaction: Update year in footer ===
 document.addEventListener("DOMContentLoaded", () => {
+  // === Update footer year ===
   const yearSpan = document.getElementById("year");
   if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
   }
 
+  // === Render Family Cards ===
   renderFamilyGrid(families);
+
+  // === Hamburger toggle menu ===
+  const menuButton = document.querySelector('.hamburger');
+  const nav = document.getElementById('navLinks');
+  if (menuButton && nav) {
+    menuButton.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+  }
 });
 
 // === Family Data Example ===
 const families = [
-  { name: "Amanda McKey/Key Fields", branch: "Fields", birth: 1855, bio: "She is the beginning." },
-  { name: "Thomas Fields", branch: "Fields", birth: 1851, bio: "A dutiful husband and patriarch." },
-  { name: "Isaiah Buffins", branch: "Buffin", birth: 1840, bio: "A survivor and an example as can be seen in his childern." },
-  { name: "Peggy Warren Buffins", branch: "Buffin", birth: 1850, bio: "A mother to her sons and daughters." }
+  {
+    name: "Amanda McKey/Key Fields",
+    branch: "Fields",
+    birth: 1855,
+    bio: "She is the beginning."
+  },
+  {
+    name: "Thomas Fields",
+    branch: "Fields",
+    birth: 1851,
+    bio: "A dutiful husband and patriarch."
+  },
+  {
+    name: "Isaiah Buffins",
+    branch: "Buffin",
+    birth: 1840,
+    bio: "A survivor and an example as can be seen in his children."
+  },
+  {
+    name: "Peggy Warren Buffins",
+    branch: "Buffin",
+    birth: 1850,
+    bio: "A mother to her sons and daughters."
+  }
 ];
 
 // === Render Family Members ===
@@ -33,28 +63,26 @@ function renderFamilyGrid(data) {
   `).join("");
 }
 
+// === Lightbox Gallery ===
 function enlargeImage(img) {
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.getElementById("lightbox-img");
-  lightboxImg.src = img.src;
-  lightbox.style.display = "flex";
+  if (lightbox && lightboxImg) {
+    lightboxImg.src = img.src;
+    lightbox.style.display = "flex";
+  }
 }
 
 function closeLightbox() {
-  document.getElementById("lightbox").style.display = "none";
+  const lightbox = document.getElementById("lightbox");
+  if (lightbox) {
+    lightbox.style.display = "none";
+  }
 }
 
-function toggleMenu() {
-  const nav = document.getElementById('navLinks');
-  nav.classList.toggle('show');
-}
-
-
-// === Filter Logic (Example for dropdown or input interaction) ===
+// === Family Filter (Optional future feature) ===
 function filterByBranch(branch) {
   const filtered = families.filter(f => f.branch === branch);
   renderFamilyGrid(filtered);
   localStorage.setItem("lastViewedBranch", branch);
 }
-
-document.getElementById("year").textContent = new Date().getFullYear();
