@@ -55,7 +55,7 @@ h2 {
   
 }
 .logo {
-  max-height: 150px;
+  max-height: 200px;
   width: auto;
 }
 
@@ -76,7 +76,7 @@ h2 {
   letter-spacing: 0.5px;
 }
 .nav-links li a:hover {
-  color: var(--color-teal);
+  color: var(--color-gold);
 }
 
 /* Hamburger Icon */
