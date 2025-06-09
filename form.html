@@ -1,28 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Review Form</title>
+  <link rel="stylesheet" href="styles/form.css" />
+  <script defer src="scripts/form.js"></script>
 </head>
 <body>
-    <form action="#" method="post">
-        <fieldset>
-            <legend>Course Proposal Form</legend>
-            <label for="courseName">Course Name:</label>
-            <input type="text" id="courseName" name="courseName" required>
+  <main>
+    <form action="review.html" method="get">
+      <fieldset>
+        <legend>Product Review</legend>
 
-            <label for="instructorName">Instructor Name:</label>
-            <input type="text" id="instructorName" name="instructorName" required>
+        <!-- Product Name -->
+        <label for="productName">Product:</label>
+        <select id="productName" name="productName" required>
+          <option value="" disabled selected>Select a Product ...</option>
+        </select>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+        <!-- Rating -->
+        <p>Overall Rating:</p>
+        <div class="rating">
+          <label><input type="radio" name="rating" value="1" required>☆</label>
+          <label><input type="radio" name="rating" value="2">☆☆</label>
+          <label><input type="radio" name="rating" value="3">☆☆☆</label>
+          <label><input type="radio" name="rating" value="4">☆☆☆☆</label>
+          <label><input type="radio" name="rating" value="5">☆☆☆☆☆</label>
+        </div>
 
-            <label for="description">Course Description:</label>
-            <textarea id="description" name="description" rows="4" required></textarea>
+        <!-- Installation Date -->
+        <label for="installDate">Date of Installation:</label>
+        <input type="date" id="installDate" name="installDate" required>
 
-            <button type="submit">Submit Proposal</button>
-        </fieldset>
+        <!-- Useful Features -->
+        <p>Which features did you find useful? (Check all that apply)</p>
+        <label><input type="checkbox" id="feature1" name="features" value="feature1"> Feature 1</label>
+        <label><input type="checkbox" id="feature2" name="features" value="feature2"> Feature 2</label>
+        <label><input type="checkbox" id="feature3" name="features" value="feature3"> Feature 3</label>
+
+        <!-- Written Review -->
+        <label for="writtenReview">Written Review:</label>
+        <textarea id="writtenReview" name="writtenReview" rows="4" placeholder="Optional..."></textarea>
+
+        <!-- Username -->
+        <label for="username">Your Name (Optional):</label>
+        <input type="text" id="username" name="username">
+
+        <!-- Submit -->
+        <input type="submit" value="Submit Review">
+      </fieldset>
     </form>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Product Review Site</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
