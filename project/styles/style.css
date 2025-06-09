@@ -37,12 +37,16 @@ h2 {
 /* Accent script text */
 .accent {
   font-family: 'Caramel', cursive;
-  font-weight: bold; 
-  font-size: 2.2rem;
+  font-weight: normal; 
+  font-size: 2.6rem;
   color: var(--color-teal);
 }
-accent-text {
- text-align: justify;}
+.accent-contact {
+  font-family: 'Caramel', cursive;
+  font-size: 2.6rem;
+  color: var(--color-teal);
+  text-align: center;
+}
 
 /* ====================
    NAVIGATION HEADER
@@ -118,18 +122,36 @@ accent-text {
 form {
   max-width: 600px;
   margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.2rem;
 }
+
 label {
   font-weight: bold;
+  font-size: 1rem;
+  color: var(--color-charcoal);
 }
-input, textarea {
-  padding: 0.5em;
+
+input,
+textarea {
+  padding: 0.75rem;
+  font-size: 1rem;
   border: 1px solid #ccc;
-  font-family: 'Raleway', sans-serif;
   border-radius: 5px;
+  font-family: 'Raleway', sans-serif;
+  background-color: #fdfdfd;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
 }
 
 /* ====================
