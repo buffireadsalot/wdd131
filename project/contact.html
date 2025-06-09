@@ -17,34 +17,39 @@
   <!-- Script -->
   <script src="scripts/main.js" defer></script>
   <style>
-    header {
-      background-color: var(--color-teal);
-      color: var(--color-cream);
-      text-align: center;
-      padding: 1rem;
-    }
-    header img.logo {
-      max-height: 80px;
-      display: block;
-      margin: 0 auto;
-    }
-    nav ul.nav-links {
-      list-style: none;
-      padding: 0;
-      margin: 1rem 0 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-    }
-    nav ul.nav-links li a {
-      color: var(--color-cream);
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav ul.nav-links li a:hover {
-      color: var(--color-gold);
-    }
+   .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-teal);
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+  
+}
+.logo {
+  max-height: 200px;
+  width: auto;
+}
+
+/* Nav Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+.nav-links li a {
+  color: var(--color-cream);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.nav-links li a:hover {
+  color: var(--color-gold);
+}
     main section {
       max-width: 700px;
       margin: 2rem auto;
