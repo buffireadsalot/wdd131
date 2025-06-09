@@ -34,10 +34,11 @@ legend {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  font-family: "playfair display", serif;
 }
 
 label {
-  font-family: Raleway, sans-serif;
+  font-family: "playfair display", sans-serif;
   display: block;
   margin-bottom: 0.25rem;
   font-weight: 600;
@@ -47,7 +48,7 @@ input[type="text"],
 input[type="date"],
 select,
 textarea {
-  font-family: comorant infant, serif;
+  font-family: "comorant infant", serif;
   width: 100%;
   padding: 0.5rem;
   border: 1px solid #effae4;
