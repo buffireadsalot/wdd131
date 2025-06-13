@@ -1,5 +1,22 @@
 // main.js for Buffin Ancestry Final Project
 
+// === Global Functions ===
+function enlargeImage(img) {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  if (lightbox && lightboxImg) {
+    lightboxImg.src = img.src;
+    lightbox.style.display = "flex";
+  }
+}
+
+function closeLightbox() {
+  const lightbox = document.getElementById("lightbox");
+  if (lightbox) {
+    lightbox.style.display = "none";
+  }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   // === Update footer year ===
   const yearSpan = document.getElementById("year");
@@ -26,25 +43,33 @@ const families = [
     name: "Amanda McKey/Key Fields",
     branch: "Fields",
     birth: 1855,
-    bio: "She is the beginning."
+    birthplace: "Caddo Parish, Louisiana",
+    link: "bio/amandakey.html"
+    // bio: "She is the beginning."
   },
   {
     name: "Thomas Fields",
     branch: "Fields",
     birth: 1851,
-    bio: "A dutiful husband and patriarch."
+    birthplace: "Harrison County, Texas",
+    link: "images/amandakey.png"
+    // bio: "A dutiful husband and patriarch."
   },
   {
     name: "Isaiah Buffins",
     branch: "Buffin",
     birth: 1840,
-    bio: "A survivor and an example as can be seen in his children."
+    birthplace: "Alabama",
+    link: "images/charleymaggiebuffins.jpg"
+    // bio: "A survivor and an example as can be seen in his children."
   },
   {
     name: "Peggy Warren Buffins",
     branch: "Buffin",
     birth: 1850,
-    bio: "A mother to her sons and daughters."
+    birthplace: "Mississippi",
+    link: "images/charleymaggiebuffins.jpg"
+    // bio: "A mother to her sons and daughters."
   }
 ];
 
@@ -54,17 +79,16 @@ function renderFamilyGrid(data) {
   if (!section) return;
 
   section.innerHTML = data.map(member => `
-    <div class="family-card">
-      <h3>${member.name}</h3>
-      <p><strong>Branch:</strong> ${member.branch}</p>
-      <p><strong>Born:</strong> ${member.birth}</p>
-      <p>${member.bio}</p>
-    </div>
-  `).join("");
-}
+  <a href="${member.link}" class="family-card" target="_blank">
+    <h3>${member.name}</h3>
+    <p><strong>Branch:</strong> ${member.branch}</p>
+    <p><strong>Born:</strong> ${member.birth}</p>
+    <p><strong>Birthplace:</strong> ${member.birthplace}</p>
+  </a>
+`).join("");
 
-// === Lightbox Gallery ===
-function enlargeImage(img) {
+  // === Lightbox Gallery ===
+ function enlargeImage(img) {
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.getElementById("lightbox-img");
   if (lightbox && lightboxImg) {
@@ -80,9 +104,10 @@ function closeLightbox() {
   }
 }
 
-// === Family Filter (Optional future feature) ===
-function filterByBranch(branch) {
-  const filtered = families.filter(f => f.branch === branch);
-  renderFamilyGrid(filtered);
-  localStorage.setItem("lastViewedBranch", branch);
+  // === Family Filter (Optional future feature) ===
+  function filterByBranch(branch) {
+    const filtered = families.filter(f => f.branch === branch);
+    renderFamilyGrid(filtered);
+    localStorage.setItem("lastViewedBranch", branch);
+  }
 }
