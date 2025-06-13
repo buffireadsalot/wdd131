@@ -52,7 +52,7 @@ const families = [
     branch: "Fields",
     birth: 1851,
     birthplace: "Harrison County, Texas",
-    link: "images/amandakey.png"
+    // link: "images/amandakey.png"
     // bio: "A dutiful husband and patriarch."
   },
   {
@@ -60,7 +60,7 @@ const families = [
     branch: "Buffin",
     birth: 1840,
     birthplace: "Alabama",
-    link: "images/charleymaggiebuffins.jpg"
+    // link: "images/charleymaggiebuffins.jpg"
     // bio: "A survivor and an example as can be seen in his children."
   },
   {
@@ -68,7 +68,7 @@ const families = [
     branch: "Buffin",
     birth: 1850,
     birthplace: "Mississippi",
-    link: "images/charleymaggiebuffins.jpg"
+    // link: "images/charleymaggiebuffins.jpg"
     // bio: "A mother to her sons and daughters."
   }
 ];
