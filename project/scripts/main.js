@@ -87,22 +87,22 @@ function renderFamilyGrid(data) {
   </a>
 `).join("");
 
-  // === Lightbox Gallery ===
- function enlargeImage(img) {
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightbox-img");
-  if (lightbox && lightboxImg) {
-    lightboxImg.src = img.src;
-    lightbox.style.display = "flex";
-  }
-}
+//   // === Lightbox Gallery ===
+//  function enlargeImage(img) {
+//   const lightbox = document.getElementById("lightbox");
+//   const lightboxImg = document.getElementById("lightbox-img");
+//   if (lightbox && lightboxImg) {
+//     lightboxImg.src = img.src;
+//     lightbox.style.display = "flex";
+//   }
+// }
 
-function closeLightbox() {
-  const lightbox = document.getElementById("lightbox");
-  if (lightbox) {
-    lightbox.style.display = "none";
-  }
-}
+// function closeLightbox() {
+//   const lightbox = document.getElementById("lightbox");
+//   if (lightbox) {
+//     lightbox.style.display = "none";
+//   }
+// }
 
   // === Family Filter (Optional future feature) ===
   function filterByBranch(branch) {
