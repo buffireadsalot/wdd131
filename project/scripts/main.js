@@ -48,27 +48,27 @@ const families = [
     // bio: "She is the beginning."
   },
   {
-    name: "Thomas Fields",
-    branch: "Fields",
-    birth: 1851,
+    name: "Charley Buffins",
+    branch: "Buffins",
+    birth: 1876,
     birthplace: "Harrison County, Texas",
-    // link: "images/amandakey.png"
+    link: "bio/charleybuffins.html"
     // bio: "A dutiful husband and patriarch."
   },
   {
-    name: "Isaiah Buffins",
+    name: "James Arthur Buffin",
     branch: "Buffin",
-    birth: 1840,
-    birthplace: "Alabama",
-    // link: "images/charleymaggiebuffins.jpg"
+    birth: 1900,
+    birthplace: "Harrison County, Texas",
+    link: "bio/jimbuffin.html"
     // bio: "A survivor and an example as can be seen in his children."
   },
   {
-    name: "Peggy Warren Buffins",
+    name: "Robert Lee Buffin",
     branch: "Buffin",
-    birth: 1850,
-    birthplace: "Mississippi",
-    // link: "images/charleymaggiebuffins.jpg"
+    birth: 1935,
+    birthplace: "Dallas, Texas",
+    link: "bio/robertlbuffin.html"
     // bio: "A mother to her sons and daughters."
   }
 ];
@@ -79,7 +79,7 @@ function renderFamilyGrid(data) {
   if (!section) return;
 
   section.innerHTML = data.map(member => `
-  <a href="${member.link}" class="family-card" target="_blank">
+  <a href="${member.link}" class="family-card" >
     <h3>${member.name}</h3>
     <p><strong>Branch:</strong> ${member.branch}</p>
     <p><strong>Born:</strong> ${member.birth}</p>
