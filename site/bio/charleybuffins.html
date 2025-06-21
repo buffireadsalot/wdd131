@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Charley Buffins| Buffin Ancestry</title>
+  <link rel="stylesheet" href="../styles/style.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caramel&family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Scripts -->
+  <script src="../scripts/main.js" defer></script>
+
+</head>
+<body>
+  <header class="navbar">
+    <img src="../images/buffin-ancestry-logo.png" alt="Buffin Ancestry Logo" class="logo">
+    <button class="hamburger" aria-label="Toggle Navigation" onclick="toggleMenu()">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../families.html">Families</a></li>
+      <li><a href="../gallery.html">Gallery</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+      <li><a href="../references.html">References</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <section class="photo-grid">
+        <div><img src="../images/CharleyMaggieBuffins.jpg" alt="Great Grands - Charley and Maggie Buffins" onclick="enlargeImage(this)" loading="lazy"><div class="photo-hover-text">Charley Buffins and Maggie Fields: Amanda's Daughter and Son in law.</div></div>
+        <div><img src="../images/BuffinFamily.jpg" alt="Great Grand Maggie Buffins" onclick="enlargeImage(this)" loading="lazy"><div class="photo-hover-text">Maggie Fields Buffins - 1950's</div></div>
+    </section>
+ <a href="../families.html">Return to Families</a>
+<!-- Lightbox container -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Enlarged view">
+ 
+</div>
+
+  </main>
+    <footer>
+    <p>&copy; <span id="year"></span> Annela Buffin | Buffin Ancestry</p>
+  </footer>
+</body>
+</html>
