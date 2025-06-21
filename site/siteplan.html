@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="Discover your ancestry with Buffin Ancestry. Let us help you find your roots. Explore family history, genealogy, and heritage with our expert services.">
+  <meta name="keywords" content="Buffin Ancestry, Buffin Roots, Buffin Family History.">
+  <meta name="author" content="Annela Buffin" />
+  <title>Buffin Ancestry – Find the Roots that Bind</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caramel&family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/siteplan.css" />
+  <script src="scripts/place.js" defer></script>
+  <style>
+    body {
+      font-family: 'Raleway', sans-serif;
+      background-color: #f9f5f1;
+      color: #3D2C2E;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      font-family: 'Cormorant Infant', serif;
+      color: #29221D;
+    }
+    h1 {
+      font-size: 2.5rem;
+    }
+    h2 {
+      font-size: 1.75rem;
+      margin-top: 2rem;
+    }
+    .accent {
+      font-family: 'Caramel', cursive;
+      font-size: 1.75rem;
+      color: #8B5E3C;
+    }
+    .color-swatch {
+      display: inline-block;
+      width: 2rem;
+      height: 2rem;
+      margin-right: 0.5rem;
+      border: 1px solid #ccc;
+      vertical-align: middle;
+    }
+    img.wireframe {
+      max-width: 100%;
+      height: auto;
+      margin-top: 1rem;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ccc;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">Buffin Ancestry – Site Plan</header>
+
+  <h2>Site Name & Logo</h2>
+  <p><strong>Site Name:</strong> Buffin Ancestry – Find the Roots That Bind</p>
+  <p>The name reflects our mission to preserve the rich heritage of the Buffin family and related branches like the Fields, Okra, and Key families. The logo integrates a tree motif and traditional typography to honor legacy and connection.</p>
+
+  <h2>Site Purpose</h2>
+  <p>Buffin Ancestry is a digital family archive dedicated to preserving the lineage, stories, documents, and photos of the Buffin family and its extended branches. Visitors can browse family trees, view historical photos, submit their stories, and learn about the family's journey through time.</p>
+  <div class="photo-grid">
+    <img src="images/buffin-ancestry-logo.png" alt="Buffin Ancestry Logo" class="logo" />
+    <img src="images/Buffin_Ancestry_dark_Logo.png" alt="Buffin Family Tree" class="family-tree" />
+    <img src="images/color-schema-logo.png" alt="Buffin Family Photo" class="family-photo" />
+  </div>
+  <h2>Scenarios</h2>
+  <ul>
+    <li>How can I find information about the Key family branch?</li>
+    <li>Where can I view and submit historical family documents and stories?</li>
+  </ul>
+
+  <h2>Color Schema</h2>
+  <p>
+    <span class="color-swatch" style="background-color: #316b6b;"></span> #3D2C2E – Primary header and nav text<br>
+    <span class="color-swatch" style="background-color: #f5eed4;"></span> #F9F5F1 – Background color<br>
+    <span class="color-swatch" style="background-color: #c4a253;"></span> #8B5E3C – Buttons and highlights<br>
+    <span class="color-swatch" style="background-color: #1d2323;"></span> #29221D – Footer and strong accents
+  </p>
+
+  <h2>Typography</h2>
+  
+    <h3><strong>Cormorant Infant:</strong> Used for main headers and section titles.</h3>
+    <p><strong>Raleway:</strong> Used for all paragraph and body text.</p>
+    <div class="accent"><strong>Caramel:</strong> Used for accent text like quotes or signature lines.</div>
+    <h4><strong>Playfair Display:</strong> Optional for large hero headings as a serif fallback.</h4>
+  
+
+  <h2>Wireframe (Home Page)</h2>
+  <p><span class="h4">Mobile & Desktop Layout</span></p>
+  <img src="images/WireFrame_BuffinAncestry2.png" alt="Wireframe for Buffin Ancestry homepage layout" class="wireframe" />
+
+  <footer>
+    <p>&copy; <span id="year"></span> Annela Buffin | Buffin Ancestry</p>
+  </footer>
+
+  <script>
+    // Insert current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
