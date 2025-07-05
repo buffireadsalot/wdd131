@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buffin Ancestry | Gallery</title>
+  <meta name="description" content="View historical photos and scanned documents from the Buffin family archive.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caramel&family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/style.css">
+
+  <!-- Script -->
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+<header class="navbar">
+  <img src="images/buffin-ancestry-logo.png" alt="Buffin Ancestry Logo" class="logo">
+  <button class="hamburger" aria-label="Toggle Navigation" onclick="toggleMenu()">☰</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="families.html">Families</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="references.html">References</a></li>
+  </ul>
+</header>
+ <main>
+    <section>
+      <h1>Family Gallery</h1>
+      <p class="accent">Cherished photos of the Buffin family.</p>
+    </section>
+
+    <section class="photo-grid">
+        <div><img src="images/AmandaKey.png" alt="Amanda McKey/Key" onclick="enlargeImage(this)" loading="lazy"><div class="photo-hover-text">Amanda McKey/McKee/Key</div></div>
+        <div><img src="images/BuffinFamily.jpg" alt="Buffin Family with Maggie Buffins" onclick="enlargeImage(this)" loading="lazy"><div class="photo-hover-text">Buffin Family</div></div>
+        <div><img src="images/CharleyMaggieBuffins.jpg" alt="Charley and Maggie Buffins" onclick="enlargeImage(this)" loading="lazy"><div class="photo-hover-text">Charley and Maggie Buffin</div></div>
+        <div><img src="images/JamesEdwardBuffin.jpg" alt="Uncle James Buffin 1980s" onclick="enlargeImage(this)" loading="lazy"><div class="photo-hover-text">James Buffin</div></div>
+        <div><img src="images/ThomasCharlesBuffin.jpg" alt="Uncle Thomas Buffin 1980s" onclick="enlargeImage(this)" loading="lazy"><div class="photo-hover-text">Thomas Buffin</div></div>
+       <div><img src="images/RobertLeeBuffinArmy.jpg" alt="Bob Buffin Army Late 1950s early 1960s" onclick="enlargeImage(this)" loading="lazy"><div class="photo-hover-text">Robert Buffin</div></div>
+    </section>
+
+<!-- Lightbox container -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Enlarged view">
+</div>
+
+  </main>
+    <footer>
+    <p>&copy; <span id="year"></span> Annela Buffin | Buffin Ancestry</p>
+  </footer>
+</body>
+</html>
